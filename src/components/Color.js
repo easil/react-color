@@ -14,6 +14,7 @@ import Swatches from './swatches/Swatches'
 import Slider from './slider/Slider'
 import Material from './material/Material'
 import Compact from './compact/Compact'
+import Easil from './easil/Sketch';
 
 class ColorPicker extends ReactCSS.Component {
 
@@ -159,6 +160,8 @@ class ColorPicker extends ReactCSS.Component {
       Picker = Material
     } else if (this.props.type === 'compact') {
       Picker = Compact
+    } else if (this.props.type === 'easil') {
+      Picker = Easil
     }
 
     return (
