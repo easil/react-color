@@ -42172,12 +42172,6 @@
 	        ),
 	        React.createElement(
 	          'div',
-	          { style: this.styles().color },
-	          React.createElement('div', { style: this.styles().activeColor }),
-	          React.createElement(Checkboard, null)
-	        ),
-	        React.createElement(
-	          'div',
 	          { style: this.styles().fields },
 	          React.createElement(SketchFields, _extends({}, this.props, { onChange: this.handleChange }))
 	        ),
@@ -51578,7 +51572,7 @@
 	          { style: this.styles().swatch, onClick: this.handleClick },
 	          _react2.default.createElement('div', { style: this.styles().color })
 	        ),
-	        _react2.default.createElement(_reactColor2.default, { color: this.state.color, display: this.state.displayColorPicker, position: 'below', onChange: this.handleChange, onClose: this.handleClose, type: 'sketch' })
+	        _react2.default.createElement(_reactColor2.default, { color: this.state.color, display: this.state.displayColorPicker, position: 'below', onChange: this.handleChange, onClose: this.handleClose, type: 'easil' })
 	      );
 	    }
 	  }]);
