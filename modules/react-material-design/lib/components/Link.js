@@ -10,10 +10,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _lodash = require('lodash');
-
-var _lodash2 = _interopRequireDefault(_lodash);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -46,7 +42,7 @@ var Link = function (_React$Component) {
     value: function render() {
 
       var a;
-      if (_lodash2.default.isString(this.props.onClick)) {
+      if (typeof this.props.onClick === 'string') {
         a = _react2.default.createElement(
           'a',
           { style: { textDecoration: 'none' }, href: this.props.onClick, target: this.props.newTab && '_blank' },

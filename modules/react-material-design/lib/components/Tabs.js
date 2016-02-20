@@ -16,10 +16,6 @@ var _reactcss = require('reactcss');
 
 var _reactcss2 = _interopRequireDefault(_reactcss);
 
-var _lodash = require('lodash');
-
-var _lodash2 = _interopRequireDefault(_lodash);
-
 var _Tab = require('./Tab');
 
 var _Tab2 = _interopRequireDefault(_Tab);
@@ -221,7 +217,7 @@ var Tabs = function (_ReactCSS$Component) {
         var callback;
         var callbackValue;
         var newTab;
-        if (_lodash2.default.isString(tab)) {
+        if (typeof tab === 'string') {
           label = tab;
           callback = null;
         } else {
